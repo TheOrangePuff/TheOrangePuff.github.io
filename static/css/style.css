@@ -1,0 +1,75 @@
+body {
+    background-image: url('../images/backgrounds/background.jpg');
+    background-size: cover;
+    color: #efefef;
+    font-weight: 300;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .65);
+}
+
+h1 {
+    font-size: 5vw;
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 2vw;
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Change font size of titles based off media queries */
+@media screen and (min-width: 1001px) {
+    h1 {
+        font-size: 5vw;
+    }
+
+    h2 {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+}
+
+#socials {
+    display: flex;
+    width: 80vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#socials > div {
+    margin: 10px;
+}
+
+#socials img {
+    width: 17vw;
+    max-width: 50px;
+    filter: invert(100%) sepia(8%) saturate(14%) hue-rotate(335deg) brightness(111%) contrast(87%);
+}
+
+#socials img:hover {
+    filter: invert(99%) sepia(3%) saturate(43%) hue-rotate(268deg) brightness(118%) contrast(96%);
+}
+
