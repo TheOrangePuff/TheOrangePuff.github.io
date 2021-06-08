@@ -103,15 +103,25 @@ h2 {
     display: flex;
 }
 
+.project p,h2,h3,h4 {
+    margin: 0px;
+}
+
 #portfolio .project:nth-child(odd) {
     flex-direction: row-reverse;
 }
 
 .image-scroller {
     width: 30%;
+    padding: 5px;
+}
+
+.image-scroller img {
+    width: 100%;
 }
 
 .content {
     width: 70%;
+    padding: 5px;
 }
 
