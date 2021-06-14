@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8"/>
         <title>Daniel van der Ploeg</title>
         <link rel='stylesheet' href='static/css/style.css'/>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <!-- CSS files for Photoswipe -->
+        <link rel="stylesheet" href="static/css/photoswipe.css">
+        <link rel="stylesheet" href="static/css/default-skin/default-skin.css">
+        <!-- JS files for Photoswipe -->
+        <script src="static/js/photoswipe.min.js"></script>
+        <script src="static/js/photoswipe-ui-default.min.js"></script>
     </head>
     <body>
         <div id='main'>
@@ -20,9 +27,27 @@
         <div id="portfolio">
             <h2>Portfolio</h2>
             <div class="project">
-                <div class="image-scroller">
-                    <img src="static/images/portfolio/carnival-01.png" />
-                    <img src="static/images/portfolio/carnival-02.png" />
+                <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="static/images/portfolio/carnival-01.png" itemprop="contentUrl" data-size="1906x922">
+                            <img src="static/images/portfolio/carnival-01.png" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="static/images/portfolio/carnival-02.png" itemprop="contentUrl" data-size="1906x922">
+                            <img src="static/images/portfolio/carnival-02.png" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="static/images/portfolio/carnival-03.png" itemprop="contentUrl" data-size="1906x922">
+                            <img src="static/images/portfolio/carnival-03.png" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="static/images/portfolio/carnival-04.png" itemprop="contentUrl" data-size="1906x922">
+                            <img src="static/images/portfolio/carnival-04.png" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                    </figure>
                 </div>
                 <div class="content">
                     <div class="header"><h3>Athletics and Swimming Carnival Website</h3></div>
@@ -44,15 +69,35 @@
                             <li>Docker</li>
                         </ul>
                     </div>
-                    <div class="links">
-                        <h4>Links</h4>
-                    </div>
                 </div>
             </div>
             <div class="project">
-                <div class="image-scroller">
-                    <img src="static/images/portfolio/detention-website-01.png" />
-                    <img src="static/images/portfolio/detention-website-02.png" />
+                <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="static/images/portfolio/detention-website-01.png" itemprop="contentUrl" data-size="1906x933">
+                            <img src="static/images/portfolio/detention-website-01.png" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="static/images/portfolio/detention-website-02.png" itemprop="contentUrl" data-size="1906x922">
+                            <img src="static/images/portfolio/detention-website-02.png" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="static/images/portfolio/detention-website-03.png" itemprop="contentUrl" data-size="1894x922">
+                            <img src="static/images/portfolio/detention-website-03.png" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="static/images/portfolio/detention-website-04.png" itemprop="contentUrl" data-size="1894x922">
+                            <img src="static/images/portfolio/detention-website-04.png" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="static/images/portfolio/detention-website-05.png" itemprop="contentUrl" data-size="1894x922">
+                            <img src="static/images/portfolio/detention-website-05.png" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                    </figure>
                 </div>
                 <div class="content">
                     <div class="header"><h3>Detention and Reminder Slip Program</h3></div>
@@ -74,14 +119,15 @@
                             <li>Docker</li>
                         </ul>
                     </div>
-                    <div class="links">
-                        <h4>Links</h4>
-                    </div>
                 </div>
             </div>
             <div class="project">
-                <div class="image-scroller">
-                    <img src="static/images/portfolio/lockdownexam-01.png" />
+                <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="static/images/portfolio/lockdownexam-01.png" itemprop="contentUrl" data-size="1906x933">
+                            <img src="static/images/portfolio/lockdownexam-01.png" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                    </figure>
                 </div>
                 <div class="content">
                     <div class="header"><h3>Lock-down Exam Tool</h3></div>
@@ -101,21 +147,36 @@
                             <li>Docker</li>
                         </ul>
                     </div>
-                    <div class="links">
-                        <h4>Links</h4>
-                        <a href="https://polrproject.org/">Polr</a>
-                    </div>
                 </div>
             </div>
             <div class="project">
-                <div class="image-scroller">
-                    <img src="static/images/portfolio/signage-01.png" />
+                <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="static/images/portfolio/signage-01.png" itemprop="contentUrl" data-size="1906x933">
+                            <img src="static/images/portfolio/signage-01.png" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="static/images/portfolio/signage-02.png" itemprop="contentUrl" data-size="1906x922">
+                            <img src="static/images/portfolio/signage-02.png" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="static/images/portfolio/signage-03.png" itemprop="contentUrl" data-size="1906x922">
+                            <img src="static/images/portfolio/signage-03.png" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="static/images/portfolio/signage-04.png" itemprop="contentUrl" data-size="1906x922">
+                            <img src="static/images/portfolio/signage-04.png" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                    </figure>
                 </div>
                 <div class="content">
                     <div class="header"><h3>Digital Signage Solution</h3></div>
                     <div class="objective">
                         <h4>Objective</h4>
-                        <p></p>
+                        <p>To provide a user friendly method of communicating room changes and daily notices to students using the exisiting TVs around the school.</p>
                     </div>
                     <div class="description">
                         <h4>Description</h4>
@@ -131,42 +192,56 @@
                             <li>Docker</li>
                         </ul>
                     </div>
-                    <div class="links">
-                        <h4>Links</h4>
-                    </div>
                 </div>
             </div>
-            <div class="project">
-                <div class="image-scroller">
-                    <img src="static/images/portfolio/detention-website-01.png" />
-                    <img src="static/images/portfolio/detention-website-02.png" />
-                </div>
-                <div class="content">
-                    <div class="header"><h3>Laptop Payment Website</h3></div>
-                    <div class="objective">
-                        <h4>Objective</h4>
-                        <p></p>
-                    </div>
-                    <div class="description">
-                        <h4>Description</h4>
-                        <p></p>
-                    </div>
-                    <div class="tech">
-                        <h4>Tech Stack</h4>
-                        <ul>
-                            <li>Python</li>
-                            <li>Django</li>
-                            <li>PostgreSQL</li>
-                            <li>Bootstrap</li>
-                            <li>Docker</li>
-                        </ul>
-                    </div>
-                    <div class="links">
-                        <h4>Links</h4>
-                    </div>
-                </div>
-            </div>
-
         </div>
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <!-- Background of PhotoSwipe.
+                 It's a separate element, as animating opacity is faster than rgba(). -->
+            <div class="pswp__bg"></div>
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap">
+                <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+                <div class="pswp__container">
+                    <!-- don't modify these 3 pswp__item elements, data is added later on -->
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <!--  Controls are self-explanatory. Order can be changed. -->
+                        <div class="pswp__counter"></div>
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                        <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                        <!-- element will get class pswp__preloader--active when preloader is running -->
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                              <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="static/js/photoswipe-init.js"></script>
     </body>
 </html>
