@@ -1,6 +1,6 @@
 body {
-    background-color: #424f30;
-    color: #d6e3ef;
+    background-color: rgb(250, 247, 242);
+    color: #455d58;
     font-weight: 300;
     margin: 0px;
     font-family: 'Roboto', sans-serif;
@@ -14,6 +14,7 @@ body {
     align-items: center;
     background-image: url('../images/backgrounds/background.jpg');
     background-size: cover;
+    color: #fff;
 }
 
 #main > div:not(:first-child) {
@@ -22,11 +23,7 @@ body {
 
 /* Make a gradient background that fades into the background color */
 #main-dimmer {
-    background-color: rgba(0, 0, 0, .65);
-    background: -moz-linear-gradient(180deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 70%, rgba(66,79,48,1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 70%, rgba(66,79,48,1) 100%);
-    background: linear-gradient(180deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 70%, rgba(66,79,48,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#424f30",GradientType=1);
+    background-color: rgba(69, 93, 88,0.85);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -41,7 +38,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2vw;
+    font-size: 2.5vw;
     font-weight: 300;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -73,17 +70,15 @@ h2 {
 #socials img {
     width: 17vw;
     max-width: 50px;
-    filter: invert(94%) sepia(2%) saturate(3260%) hue-rotate(180deg) brightness(99%) contrast(90%);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(266deg) brightness(111%) contrast(101%);
 }
 
 #socials img:hover {
-    filter: invert(78%) sepia(24%) saturate(226%) hue-rotate(149deg) brightness(93%) contrast(83%);
+    filter: invert(99%) sepia(49%) saturate(87%) hue-rotate(170deg) brightness(109%) contrast(76%);
 }
 
 #portfolio {
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
+    margin-top: 50px;
     margin-left: 150px;
     margin-right: 150px;
 }
@@ -91,21 +86,27 @@ h2 {
 /* Reduce margin on a smaller screen */
 @media screen and (max-width: 1000px) {
     #portfolio {
-        margin: 10px;
+        margin: 30px;
+    }
+
+    .gallery {
+        width: 30%;
+        padding-right: 15px !important;
+    }
+
+    #portfolio .project:nth-child(odd) .gallery {
+        padding-left: 15px !important;
     }
 }
 
 #portfolio h2 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 .project {
     display: flex;
-    background-color: rgba(0,0,0,0.2);
     margin-bottom: 25px;
-    border-color: rgba(0,0,0,0.2);
-    border-radius: 10px;
 }
 
 .project p,h2,h3,h4 {
@@ -119,13 +120,24 @@ h2 {
 .gallery {
     width: 30%;
     padding: 15px;
+    padding-right: 100px;
+    background-color: #62867E;
+    border-top-left-radius: 15px;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
 }
 
+#portfolio .project:nth-child(odd) .gallery {
+    padding-left: 100px;
+    padding-right: 15px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 15px;
+}
+
 .gallery img {
     width: 100%;
+    border-radius: 5px;
 }
 
 .gallery figure:first-child {
@@ -142,6 +154,13 @@ h2 {
 .content {
     width: 70%;
     padding: 15px;
+    background-color: rgba(98,124,126,0.10);
+    border-bottom-right-radius: 15px;
+}
+
+#portfolio .project:nth-child(odd) .content {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 15px;
 }
 
 .content > * {
