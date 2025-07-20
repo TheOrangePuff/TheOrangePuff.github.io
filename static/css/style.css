@@ -115,3 +115,14 @@ body {
 .neofetch-label {
     color: var(--term-cyan);
 }
+
+/* Certifications */
+.cert-title {
+    color: var(--term-yellow);
+    font-weight: bold;
+}
+
+.cert-dates {
+    color: var(--term-aqua);
+    font-weight: bold;
+}
