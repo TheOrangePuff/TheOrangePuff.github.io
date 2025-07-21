@@ -126,3 +126,14 @@ body {
     color: var(--term-aqua);
     font-weight: bold;
 }
+
+/* Links */
+a {
+    color: var(--term-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--term-cyan);
+    text-decoration: underline;
+}
