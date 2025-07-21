@@ -88,6 +88,15 @@ Exploring game development with Godot Engine:
 - Building tools and systems for procedural generation</pre>
         </div>
 
+        <div class="terminal-line">
+            <span class="prompt">daniel@portfolio:~$</span>
+            <span class="command">curl -s https://api.github.com/users/TheOrangePuff/events | jq '.[0:10] | .[] | "\(.created_at) \(.type) \(.repo.name)"'</span>
+        </div>
+        
+        <div class="output" id="github-activity">
+            <pre>Loading GitHub activity...</pre>
+        </div>
+
         <div class="terminal-line active-prompt">
             <span class="prompt">daniel@portfolio:~$</span>
             <span class="cursor"></span>
