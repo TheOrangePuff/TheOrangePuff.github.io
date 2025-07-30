@@ -155,3 +155,28 @@ a:hover {
     from, to { border-color: transparent }
     50% { border-color: var(--term-green); }
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #main {
+        padding: 20px;
+    }
+    
+    .neofetch-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .neofetch-image img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .terminal-line {
+        font-size: 12px;
+    }
+    
+    .output {
+        font-size: 12px;
+    }
+}
