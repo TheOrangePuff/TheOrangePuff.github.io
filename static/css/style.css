@@ -194,6 +194,10 @@ a:hover::after {
     display: none;
 }
 
+.neofetch-header-desktop {
+    display: block;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     #main {
@@ -206,6 +210,10 @@ a:hover::after {
     }
     
     .neofetch-image {
+        display: none;
+    }
+    
+    .neofetch-header-desktop {
         display: none;
     }
     
