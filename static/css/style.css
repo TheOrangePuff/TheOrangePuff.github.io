@@ -173,6 +173,15 @@ a:hover::after {
     50% { border-color: var(--term-green); }
 }
 
+/* ls -la output formatting */
+.ls-desktop {
+    display: block;
+}
+
+.ls-mobile {
+    display: none;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     #main {
@@ -194,5 +203,17 @@ a:hover::after {
     
     .output {
         font-size: 12px;
+        margin-left: 10px;
     }
+    
+    /* Show mobile version, hide desktop version */
+    .ls-desktop {
+        display: none;
+    }
+    
+    .ls-mobile {
+        display: block;
+        font-family: inherit;
+    }
+    
 }
