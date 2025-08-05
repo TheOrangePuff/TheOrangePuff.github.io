@@ -131,11 +131,27 @@ body {
 a {
     color: var(--term-blue);
     text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--term-green);
+    transition: width 0.3s ease;
 }
 
 a:hover {
     color: var(--term-cyan);
-    text-decoration: underline;
+}
+
+a:hover::after {
+    width: 100%;
 }
 
 /* Typed Text Effect */
