@@ -58,7 +58,7 @@ body {
 }
 
 .output {
-    margin: 15px 0 25px 0;
+    margin: 15px 0 25px 20px;
     padding-left: 0;
     font-size: 14px;
 }
@@ -90,11 +90,12 @@ body {
 .neofetch-container {
     display: flex;
     gap: 30px;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .neofetch-image {
     flex-shrink: 0;
+    align-self: center;
 }
 
 .neofetch-image img {
@@ -183,9 +184,8 @@ a:hover::after {
         gap: 20px;
     }
     
-    .neofetch-image img {
-        width: 150px;
-        height: 150px;
+    .neofetch-image {
+        display: none;
     }
     
     .terminal-line {
