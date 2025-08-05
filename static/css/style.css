@@ -198,21 +198,29 @@ a:hover::after {
     }
     
     .terminal-line {
-        font-size: 12px;
+        font-size: 11px;
     }
     
     .output {
-        font-size: 12px;
+        font-size: 11px;
         margin-left: 10px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .output pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
     
     /* Show mobile version, hide desktop version */
     .ls-desktop {
-        display: none;
+        display: none !important;
     }
     
     .ls-mobile {
-        display: block;
+        display: block !important;
         font-family: inherit;
     }
     
