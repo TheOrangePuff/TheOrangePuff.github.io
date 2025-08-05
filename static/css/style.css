@@ -25,7 +25,7 @@
 body {
     background-color: var(--term-bg-hard);
     color: var(--term-fg);
-    font-family: 'Fira Code', 'Courier New', monospace;
+    font-family: 'Droid Sans Mono', 'Fira Code', 'Courier New', monospace;
     margin: 0;
     padding: 0;
     line-height: 1.6;
